@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face{
+  font-family:"League_Spartan";
+  src: url("./League_Spartan/LeagueSpartan-VariableFont_wght.ttf") format("truetype");
+}
+
+body{
+  font-family: "League_Spartan"
+}
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.hero{
+  margin-block-start: 10%;
+}
+
+.hero p {
+  color: hsl(303, 10%, 53%);
+}
+
+.reviews{
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews span{
+  display: flex;
+  flex-direction: column;
+}
+
+.d-flex{
+  display: flex;
+}
