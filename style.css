@@ -1,43 +1,128 @@
 *,
 *::before,
-*::after{
+*::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-@font-face{
-  font-family:"League_Spartan";
-  src: url("./League_Spartan/LeagueSpartan-VariableFont_wght.ttf") format("truetype");
+@font-face {
+  font-family: "League_Spartan";
+  src: url("./League_Spartan/LeagueSpartan-VariableFont_wght.ttf")
+    format("truetype");
 }
 
-body{
-  font-family: "League_Spartan"
+/* Basic styling */
+
+body {
+  font-family: "League_Spartan";
+  text-align: center;
 }
 
-.container{
+.container {
   width: 90%;
   margin: 0 auto;
 }
 
-.hero{
-  margin-block-start: 10%;
+.hero {
+  margin-block: 4em;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 2.214rem + 1.221vw, 3.313rem);
+  color: hsl(300, 43%, 22%);
 }
 
 .hero p {
   color: hsl(303, 10%, 53%);
+  margin-block: 2em;
 }
 
-.reviews{
+p,
+span,
+blockquote {
+  line-height: 1.4;
+}
+
+/* Rating Section */
+
+.rating {
   display: flex;
+  gap: 1em;
   flex-direction: column;
+  margin-block: 2em;
 }
 
-.reviews span{
+.d-flex {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
+  gap: 1em;
 }
 
-.d-flex{
+.star__container {
+  background: hsl(300, 24%, 96%);
+  padding: 0.9em;
+  border-radius: 10px;
+}
+
+.star__container div {
   display: flex;
+  gap: 0.4em;
+}
+
+.star__container span {
+  color: hsl(300, 43%, 22%);
+  font-weight: bold;
+}
+
+/* Review Section */
+
+.hero__section {
+  text-align: left;
+}
+
+.hero__section--article {
+  background: hsl(300, 43%, 22%);
+  padding: 2em;
+  border-radius: 2%;
+  margin-block-end: 1em;
+}
+
+.hero__section--article blockquote,
+.hero__section--article h3 {
+  color: hsl(300, 24%, 96%);
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  margin-block-end: 2em;
+}
+
+.hero__section--article img {
+  width: 2.5em;
+  border-radius: 50%;
+}
+
+.avatar span {
+  color: hsl(333, 80%, 67%);
+}
+
+@media screen and (min-width: 800px) {
+  .top__section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .title {
+    width: 40%;
+    max-width: 450px;
+  }
+
+  
 }
