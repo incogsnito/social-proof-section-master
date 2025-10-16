@@ -111,7 +111,7 @@ blockquote {
   color: hsl(333, 80%, 67%);
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .top__section {
     display: flex;
     justify-content: space-between;
@@ -124,5 +124,44 @@ blockquote {
     max-width: 450px;
   }
 
-  
+  .d-flex{
+    flex-direction: row;
+    gap: 2em;
+  }
+
+  .rating{
+    width: 50%;
+  }
+
+  .star__container {
+    padding-inline: 2em;
+    width: 80%;
+  }
+
+  .d-flex:nth-child(2){
+    align-self: center;
+  }
+
+  .d-flex:nth-child(3){
+    align-self: flex-end;
+  }
+
+  .hero__section{
+    display: flex;
+    gap: 2em;
+    height: 300px;
+  }
+
+  .hero__section--article:first-child{
+    align-self: flex-start;
+  }
+
+  .hero__section--article:nth-child(2){
+    align-self: center;
+  }
+
+  .hero__section--article:nth-child(3){
+    align-self: flex-end;
+  }
+
 }
