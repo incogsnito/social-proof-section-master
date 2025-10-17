@@ -44,6 +44,20 @@ blockquote {
   line-height: 1.4;
 }
 
+.bg {
+  position: absolute;
+}
+
+.top {
+  top: 0px;
+  left: 0px;
+}
+
+.bottom {
+  bottom: 0px;
+  right: 0px;
+}
+
 /* Rating Section */
 
 .rating {
@@ -112,9 +126,17 @@ blockquote {
 }
 
 @media screen and (min-width: 1000px) {
+  .top {
+    content: url("./Social-proof-section-master/images/bg-pattern-top-desktop.svg");
+  }
 
-  .hero{
+  .bottom {
+    content: url("./Social-proof-section-master/images/bg-pattern-bottom-desktop.svg");
+  }
+
+  .hero {
     max-width: 1100px;
+    padding-inline: 2em;
   }
 
   .top__section {
@@ -129,12 +151,12 @@ blockquote {
     max-width: 450px;
   }
 
-  .d-flex{
+  .d-flex {
     flex-direction: row;
     gap: 2em;
   }
 
-  .rating{
+  .rating {
     width: 50%;
   }
 
@@ -143,30 +165,29 @@ blockquote {
     width: 80%;
   }
 
-  .d-flex:nth-child(2){
+  .d-flex:nth-child(2) {
     align-self: center;
   }
 
-  .d-flex:nth-child(3){
+  .d-flex:nth-child(3) {
     align-self: flex-end;
   }
 
-  .hero__section{
+  .hero__section {
     display: flex;
     gap: 2em;
     height: 300px;
   }
 
-  .hero__section--article:first-child{
+  .hero__section--article:first-child {
     align-self: flex-start;
   }
 
-  .hero__section--article:nth-child(2){
+  .hero__section--article:nth-child(2) {
     align-self: center;
   }
 
-  .hero__section--article:nth-child(3){
+  .hero__section--article:nth-child(3) {
     align-self: flex-end;
   }
-
 }
