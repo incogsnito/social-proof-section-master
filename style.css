@@ -16,13 +16,15 @@
 
 body {
   font-family: "League_Spartan";
-  text-align: center;
+  text-align:center;
+ 
 }
 
-.container {
+.container{
   width: 90%;
   margin: 0 auto;
 }
+
 
 .hero {
   margin-block: 4em;
